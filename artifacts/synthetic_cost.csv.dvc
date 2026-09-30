@@ -1,0 +1,5 @@
+outs:
+- md5: f989de22582a1fceb3235cef39926fa8
+  size: 207785
+  hash: md5
+  path: synthetic_cost.csv

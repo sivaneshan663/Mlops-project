@@ -1,0 +1,235 @@
+{
+  "question_count": 4,
+  "base_model": "Qwen/Qwen3-0.6B",
+  "note": "Tiny synthetic holdout; supplied gold context isolates generation from retrieval. Substring and citation checks are not a measure of engineering reliability. Separate project-isolation tests validate retrieval boundaries. No automatic promotion based on these scores. Responses were rescored for recognized abstention, unsupported source IDs and repeated citations. These are heuristic checks, not expert grading.",
+  "results": [
+    {
+      "configuration": "base without context",
+      "metrics": {
+        "fact_check_rate": 0.25,
+        "mean_seconds": 6.5375000000000005,
+        "supported_response_check_rate": 1.0,
+        "unsupported_citation_rate": 0.0,
+        "repetitive_citation_rate": 0.0
+      },
+      "run_id": "a397131f139543278d827be3c7b58eb0",
+      "cases": [
+        {
+          "question": "What is the approved budget?",
+          "answer": "No evidence supplied.",
+          "fact_check": false,
+          "citation_present": false,
+          "seconds": 12.96,
+          "abstained": true,
+          "unsupported_citation": false,
+          "repetitive_citations": false,
+          "supported_response_check": true
+        },
+        {
+          "question": "Who supplies the concrete?",
+          "answer": "No evidence supplied.",
+          "fact_check": false,
+          "citation_present": false,
+          "seconds": 4.22,
+          "abstained": true,
+          "unsupported_citation": false,
+          "repetitive_citations": false,
+          "supported_response_check": true
+        },
+        {
+          "question": "How much steel is pending?",
+          "answer": "No evidence supplied.",
+          "fact_check": false,
+          "citation_present": false,
+          "seconds": 4.28,
+          "abstained": true,
+          "unsupported_citation": false,
+          "repetitive_citations": false,
+          "supported_response_check": true
+        },
+        {
+          "question": "Who is the site engineer?",
+          "answer": "No evidence supplied.",
+          "fact_check": true,
+          "citation_present": false,
+          "seconds": 4.69,
+          "abstained": true,
+          "unsupported_citation": false,
+          "repetitive_citations": false,
+          "supported_response_check": true
+        }
+      ]
+    },
+    {
+      "configuration": "base + RAG context",
+      "metrics": {
+        "fact_check_rate": 1.0,
+        "mean_seconds": 9.39,
+        "supported_response_check_rate": 1.0,
+        "unsupported_citation_rate": 0.0,
+        "repetitive_citation_rate": 0.0
+      },
+      "run_id": "97f4207a4fcf4f1aae85d3b311390610",
+      "cases": [
+        {
+          "question": "What is the approved budget?",
+          "answer": "The approved budget is INR 7300000. [S1]",
+          "fact_check": true,
+          "citation_present": true,
+          "seconds": 12.14,
+          "abstained": false,
+          "unsupported_citation": false,
+          "repetitive_citations": false,
+          "supported_response_check": true
+        },
+        {
+          "question": "Who supplies the concrete?",
+          "answer": "The concrete supplier is StoneDemo. [S1]",
+          "fact_check": true,
+          "citation_present": true,
+          "seconds": 8.8,
+          "abstained": false,
+          "unsupported_citation": false,
+          "repetitive_citations": false,
+          "supported_response_check": true
+        },
+        {
+          "question": "How much steel is pending?",
+          "answer": "17 tonnes of steel are pending. [S1]",
+          "fact_check": true,
+          "citation_present": true,
+          "seconds": 10.49,
+          "abstained": false,
+          "unsupported_citation": false,
+          "repetitive_citations": false,
+          "supported_response_check": true
+        },
+        {
+          "question": "Who is the site engineer?",
+          "answer": "The information is unavailable.",
+          "fact_check": true,
+          "citation_present": false,
+          "seconds": 6.13,
+          "abstained": true,
+          "unsupported_citation": false,
+          "repetitive_citations": false,
+          "supported_response_check": true
+        }
+      ]
+    },
+    {
+      "configuration": "fine-tuned without context",
+      "metrics": {
+        "fact_check_rate": 0.25,
+        "mean_seconds": 39.3575,
+        "supported_response_check_rate": 0.0,
+        "unsupported_citation_rate": 1.0,
+        "repetitive_citation_rate": 0.0
+      },
+      "run_id": "ed7877d985564e5ab97896d047360846",
+      "cases": [
+        {
+          "question": "What is the approved budget?",
+          "answer": "No evidence supplied. [S1] [S2] [S3] [S4] [S5] [S6] [S7] [S8] [S9] [S10] [S11] [S12] [S13] [S14] [S15]",
+          "fact_check": false,
+          "citation_present": true,
+          "seconds": 38.86,
+          "abstained": true,
+          "unsupported_citation": true,
+          "repetitive_citations": false,
+          "supported_response_check": false
+        },
+        {
+          "question": "Who supplies the concrete?",
+          "answer": "No evidence supplied. Question: Who supplies the concrete? [S1] [S2] [S3] [S4] [S5] [S6] [S7] [S8] [S9] [S10] [S11] [S12] [S13] [S1",
+          "fact_check": false,
+          "citation_present": true,
+          "seconds": 37.97,
+          "abstained": true,
+          "unsupported_citation": true,
+          "repetitive_citations": false,
+          "supported_response_check": false
+        },
+        {
+          "question": "How much steel is pending?",
+          "answer": "No evidence supplied. Question: How much steel is pending? [S1] [S2] [S3] [S4] [S5] [S6] [S7] [S8] [S9] [S10] [S11] [S12] [S13] [S",
+          "fact_check": false,
+          "citation_present": true,
+          "seconds": 43.02,
+          "abstained": true,
+          "unsupported_citation": true,
+          "repetitive_citations": false,
+          "supported_response_check": false
+        },
+        {
+          "question": "Who is the site engineer?",
+          "answer": "No evidence supplied. Question: Who is the site engineer? [S1] [S2] [S3] [S4] [S5] [S6] [S7] [S8] [S9] [S10] [S11] [S12] [S13] [S",
+          "fact_check": true,
+          "citation_present": true,
+          "seconds": 37.58,
+          "abstained": true,
+          "unsupported_citation": true,
+          "repetitive_citations": false,
+          "supported_response_check": false
+        }
+      ]
+    },
+    {
+      "configuration": "fine-tuned + RAG context",
+      "metrics": {
+        "fact_check_rate": 1.0,
+        "mean_seconds": 16.655,
+        "supported_response_check_rate": 0.75,
+        "unsupported_citation_rate": 0.0,
+        "repetitive_citation_rate": 0.25
+      },
+      "run_id": "fe9cec869a224e4c97aa8ca1545505e7",
+      "cases": [
+        {
+          "question": "What is the approved budget?",
+          "answer": "The approved budget is INR 7300000. [S1]",
+          "fact_check": true,
+          "citation_present": true,
+          "seconds": 12.23,
+          "abstained": false,
+          "unsupported_citation": false,
+          "repetitive_citations": false,
+          "supported_response_check": true
+        },
+        {
+          "question": "Who supplies the concrete?",
+          "answer": "The concrete supplier is StoneDemo. [S1]",
+          "fact_check": true,
+          "citation_present": true,
+          "seconds": 8.0,
+          "abstained": false,
+          "unsupported_citation": false,
+          "repetitive_citations": false,
+          "supported_response_check": true
+        },
+        {
+          "question": "How much steel is pending?",
+          "answer": "17 tonnes of steel are pending. [S1]",
+          "fact_check": true,
+          "citation_present": true,
+          "seconds": 8.74,
+          "abstained": false,
+          "unsupported_citation": false,
+          "repetitive_citations": false,
+          "supported_response_check": true
+        },
+        {
+          "question": "Who is the site engineer?",
+          "answer": "The site engineer is not mentioned in the provided evidence. [S1] holdsout oak project: excavation is complete. No staff names provided. [S1] is unavailable. [S1] is unavailable. [S1] is unavailable. [S1] is unavailable. [S1] is unavailable. [S1] is unavailable",
+          "fact_check": true,
+          "citation_present": true,
+          "seconds": 37.65,
+          "abstained": true,
+          "unsupported_citation": false,
+          "repetitive_citations": true,
+          "supported_response_check": false
+        }
+      ]
+    }
+  ]
+}

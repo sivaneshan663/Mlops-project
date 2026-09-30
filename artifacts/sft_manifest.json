@@ -1,0 +1,12 @@
+{
+  "base_model": "Qwen/Qwen3-0.6B",
+  "adapter": "construction_adapter",
+  "method": "LoRA supervised fine-tuning",
+  "train_examples": 24,
+  "test_examples": 8,
+  "epochs": 1,
+  "data_kind": "synthetic",
+  "run_id": "e65a2d5212e646ff8411a86fcd336975",
+  "saved_adapter_inference": "The approved budget is INR 3,400,000. This amount represents the total financial allocation set by the government or organization for specific projects or programs. If you have further questions about the budget, feel free to ask!",
+  "status": "trained; experimental; not promoted: unsupported and repetitive citations observed"
+}

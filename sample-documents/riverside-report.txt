@@ -1,0 +1,10 @@
+SYNTHETIC DEMONSTRATION DOCUMENT — not real engineering data
+Project: Riverside Apartments
+Report date: 25 September 2026
+Approved budget: INR 12,000,000.
+Project scope: a fictional three-floor residential building.
+Concrete supplier: RiverMix Demo Supplies.
+Latest progress: foundation works are complete; ground-floor columns are in progress.
+Pending material: 8 tonnes of reinforcement steel, expected 30 September 2026.
+Reported issue: reinforcement delivery is delayed by two days.
+Next milestone: ground-floor slab preparation on 5 October 2026.

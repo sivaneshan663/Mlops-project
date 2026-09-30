@@ -1,0 +1,308 @@
+{
+  "at": "2026-09-29T01:23:47.478417+00:00",
+  "scope": "12 synthetic end-to-end questions, two isolated projects, actual all-minilm and Qwen3-1.7B; heuristic fact/citation/abstention checks, not expert validation. User uploads untouched.",
+  "total": 12,
+  "passed": 4,
+  "results": [
+    {
+      "question": "Who is the concrete supplier?",
+      "project": 0,
+      "expected": "CedarMix",
+      "checks": {
+        "live_hybrid_model": true,
+        "project_isolation": true,
+        "answer_check": true,
+        "citation_check": false,
+        "retrieval_check": true
+      },
+      "passed": false,
+      "answer": "The concrete supplier is CedarMix.",
+      "sources": [
+        {
+          "page": 1,
+          "text": "Synthetic Cedar site report. Concrete supplier: CedarMix. Steel delivered: 137 tonnes. Physical progress: 42 percent. Site manager: Anita Rao. The inspection is scheduled for 17 October 2026. No actual cost or crane capacity is recorded.",
+          "document": "site-report.txt",
+          "document_id": "adde0c693e4049b6a5c076759d0ed036",
+          "reference": "S1"
+        }
+      ],
+      "mode": "Foundation model: qwen3:1.7b \u00b7 Hybrid search",
+      "seconds": 9.92
+    },
+    {
+      "question": "Who is the concrete supplier?",
+      "project": 1,
+      "expected": "MapleCrete",
+      "checks": {
+        "live_hybrid_model": true,
+        "project_isolation": true,
+        "answer_check": true,
+        "citation_check": false,
+        "retrieval_check": true
+      },
+      "passed": false,
+      "answer": "The concrete supplier is MapleCrete.",
+      "sources": [
+        {
+          "page": 1,
+          "text": "Synthetic Maple site report. Concrete supplier: MapleCrete. Steel delivered: 286 tonnes. Physical progress: 68 percent. Site manager: Anita Rao. The inspection is scheduled for 17 October 2026. No actual cost or crane capacity is recorded.",
+          "document": "site-report.txt",
+          "document_id": "d187cce456b5411ab30f3a88447fca45",
+          "reference": "S1"
+        }
+      ],
+      "mode": "Foundation model: qwen3:1.7b \u00b7 Hybrid search",
+      "seconds": 0.26
+    },
+    {
+      "question": "How many tonnes of steel were delivered?",
+      "project": 0,
+      "expected": "137",
+      "checks": {
+        "live_hybrid_model": true,
+        "project_isolation": true,
+        "answer_check": true,
+        "citation_check": true,
+        "retrieval_check": true
+      },
+      "passed": true,
+      "answer": "The number of tonnes of steel delivered is 137. This is explicitly stated in the evidence provided. \n\n[S1] site-report.txt, page 1: \"Steel delivered: 137 tonnes.\"",
+      "sources": [
+        {
+          "page": 1,
+          "text": "Synthetic Cedar site report. Concrete supplier: CedarMix. Steel delivered: 137 tonnes. Physical progress: 42 percent. Site manager: Anita Rao. The inspection is scheduled for 17 October 2026. No actual cost or crane capacity is recorded.",
+          "document": "site-report.txt",
+          "document_id": "adde0c693e4049b6a5c076759d0ed036",
+          "reference": "S1"
+        }
+      ],
+      "mode": "Foundation model: qwen3:1.7b \u00b7 Hybrid search",
+      "seconds": 0.76
+    },
+    {
+      "question": "How many tonnes of steel were delivered?",
+      "project": 1,
+      "expected": "286",
+      "checks": {
+        "live_hybrid_model": true,
+        "project_isolation": true,
+        "answer_check": true,
+        "citation_check": false,
+        "retrieval_check": true
+      },
+      "passed": false,
+      "answer": "The number of tonnes of steel delivered is 286. This is explicitly stated in the evidence provided.",
+      "sources": [
+        {
+          "page": 1,
+          "text": "Synthetic Maple site report. Concrete supplier: MapleCrete. Steel delivered: 286 tonnes. Physical progress: 68 percent. Site manager: Anita Rao. The inspection is scheduled for 17 October 2026. No actual cost or crane capacity is recorded.",
+          "document": "site-report.txt",
+          "document_id": "d187cce456b5411ab30f3a88447fca45",
+          "reference": "S1"
+        }
+      ],
+      "mode": "Foundation model: qwen3:1.7b \u00b7 Hybrid search",
+      "seconds": 0.43
+    },
+    {
+      "question": "What is the physical progress percentage?",
+      "project": 0,
+      "expected": "42",
+      "checks": {
+        "live_hybrid_model": true,
+        "project_isolation": true,
+        "answer_check": true,
+        "citation_check": false,
+        "retrieval_check": true
+      },
+      "passed": false,
+      "answer": "The physical progress percentage is 42 percent.",
+      "sources": [
+        {
+          "page": 1,
+          "text": "Synthetic Cedar site report. Concrete supplier: CedarMix. Steel delivered: 137 tonnes. Physical progress: 42 percent. Site manager: Anita Rao. The inspection is scheduled for 17 October 2026. No actual cost or crane capacity is recorded.",
+          "document": "site-report.txt",
+          "document_id": "adde0c693e4049b6a5c076759d0ed036",
+          "reference": "S1"
+        }
+      ],
+      "mode": "Foundation model: qwen3:1.7b \u00b7 Hybrid search",
+      "seconds": 5.61
+    },
+    {
+      "question": "What is the physical progress percentage?",
+      "project": 1,
+      "expected": "68",
+      "checks": {
+        "live_hybrid_model": true,
+        "project_isolation": true,
+        "answer_check": true,
+        "citation_check": false,
+        "retrieval_check": true
+      },
+      "passed": false,
+      "answer": "The physical progress percentage is 68 percent.",
+      "sources": [
+        {
+          "page": 1,
+          "text": "Synthetic Maple site report. Concrete supplier: MapleCrete. Steel delivered: 286 tonnes. Physical progress: 68 percent. Site manager: Anita Rao. The inspection is scheduled for 17 October 2026. No actual cost or crane capacity is recorded.",
+          "document": "site-report.txt",
+          "document_id": "d187cce456b5411ab30f3a88447fca45",
+          "reference": "S1"
+        }
+      ],
+      "mode": "Foundation model: qwen3:1.7b \u00b7 Hybrid search",
+      "seconds": 0.27
+    },
+    {
+      "question": "Who is the site manager?",
+      "project": 0,
+      "expected": "Anita Rao",
+      "checks": {
+        "live_hybrid_model": true,
+        "project_isolation": true,
+        "answer_check": true,
+        "citation_check": false,
+        "retrieval_check": true
+      },
+      "passed": false,
+      "answer": "The site manager is Anita Rao.",
+      "sources": [
+        {
+          "page": 1,
+          "text": "Synthetic Cedar site report. Concrete supplier: CedarMix. Steel delivered: 137 tonnes. Physical progress: 42 percent. Site manager: Anita Rao. The inspection is scheduled for 17 October 2026. No actual cost or crane capacity is recorded.",
+          "document": "site-report.txt",
+          "document_id": "adde0c693e4049b6a5c076759d0ed036",
+          "reference": "S1"
+        }
+      ],
+      "mode": "Foundation model: qwen3:1.7b \u00b7 Hybrid search",
+      "seconds": 0.26
+    },
+    {
+      "question": "When is the inspection scheduled?",
+      "project": 1,
+      "expected": "17",
+      "checks": {
+        "live_hybrid_model": true,
+        "project_isolation": true,
+        "answer_check": true,
+        "citation_check": false,
+        "retrieval_check": true
+      },
+      "passed": false,
+      "answer": "The inspection is scheduled for 17 October 2026.",
+      "sources": [
+        {
+          "page": 1,
+          "text": "Synthetic Maple site report. Concrete supplier: MapleCrete. Steel delivered: 286 tonnes. Physical progress: 68 percent. Site manager: Anita Rao. The inspection is scheduled for 17 October 2026. No actual cost or crane capacity is recorded.",
+          "document": "site-report.txt",
+          "document_id": "d187cce456b5411ab30f3a88447fca45",
+          "reference": "S1"
+        }
+      ],
+      "mode": "Foundation model: qwen3:1.7b \u00b7 Hybrid search",
+      "seconds": 0.37
+    },
+    {
+      "question": "Summarize my uploaded documents",
+      "project": 0,
+      "expected": "CedarMix",
+      "checks": {
+        "live_hybrid_model": true,
+        "project_isolation": true,
+        "answer_check": false,
+        "citation_check": false,
+        "retrieval_check": true
+      },
+      "passed": false,
+      "answer": "The uploaded document is a site report from the Synthetic Cedar site. It includes information about the concrete supplier, the amount of steel delivered, the physical progress percentage, and the schedule for the inspection. No actual costs or crane capacity data is provided.",
+      "sources": [
+        {
+          "page": 1,
+          "text": "Synthetic Cedar site report. Concrete supplier: CedarMix. Steel delivered: 137 tonnes. Physical progress: 42 percent. Site manager: Anita Rao. The inspection is scheduled for 17 October 2026. No actual cost or crane capacity is recorded.",
+          "document": "site-report.txt",
+          "document_id": "adde0c693e4049b6a5c076759d0ed036",
+          "reference": "S1"
+        }
+      ],
+      "mode": "Foundation model: qwen3:1.7b \u00b7 Hybrid search",
+      "seconds": 0.86
+    },
+    {
+      "question": "What is the crane capacity?",
+      "project": 1,
+      "expected": null,
+      "checks": {
+        "live_hybrid_model": true,
+        "project_isolation": true,
+        "answer_check": true,
+        "citation_check": true,
+        "retrieval_check": true
+      },
+      "passed": true,
+      "answer": "The crane capacity is not recorded in the provided evidence.",
+      "sources": [
+        {
+          "page": 1,
+          "text": "Synthetic Maple site report. Concrete supplier: MapleCrete. Steel delivered: 286 tonnes. Physical progress: 68 percent. Site manager: Anita Rao. The inspection is scheduled for 17 October 2026. No actual cost or crane capacity is recorded.",
+          "document": "site-report.txt",
+          "document_id": "d187cce456b5411ab30f3a88447fca45",
+          "reference": "S1"
+        }
+      ],
+      "mode": "Foundation model: qwen3:1.7b \u00b7 Hybrid search",
+      "seconds": 0.33
+    },
+    {
+      "question": "What is the actual cost?",
+      "project": 0,
+      "expected": null,
+      "checks": {
+        "live_hybrid_model": true,
+        "project_isolation": true,
+        "answer_check": true,
+        "citation_check": true,
+        "retrieval_check": true
+      },
+      "passed": true,
+      "answer": "The actual cost is not recorded in the evidence provided.",
+      "sources": [
+        {
+          "page": 1,
+          "text": "Synthetic Cedar site report. Concrete supplier: CedarMix. Steel delivered: 137 tonnes. Physical progress: 42 percent. Site manager: Anita Rao. The inspection is scheduled for 17 October 2026. No actual cost or crane capacity is recorded.",
+          "document": "site-report.txt",
+          "document_id": "adde0c693e4049b6a5c076759d0ed036",
+          "reference": "S1"
+        }
+      ],
+      "mode": "Foundation model: qwen3:1.7b \u00b7 Hybrid search",
+      "seconds": 0.34
+    },
+    {
+      "question": "Tell me more about that actual cost.",
+      "project": 1,
+      "expected": null,
+      "checks": {
+        "live_hybrid_model": true,
+        "project_isolation": true,
+        "answer_check": true,
+        "citation_check": true,
+        "retrieval_check": true
+      },
+      "passed": true,
+      "answer": "The actual cost of the project has not been recorded in the provided evidence. The evidence does not include any figures related to actual costs. Therefore, it is not possible to provide a detailed account of the actual cost.",
+      "sources": [
+        {
+          "page": 1,
+          "text": "Synthetic Maple site report. Concrete supplier: MapleCrete. Steel delivered: 286 tonnes. Physical progress: 68 percent. Site manager: Anita Rao. The inspection is scheduled for 17 October 2026. No actual cost or crane capacity is recorded.",
+          "document": "site-report.txt",
+          "document_id": "d187cce456b5411ab30f3a88447fca45",
+          "reference": "S1"
+        }
+      ],
+      "mode": "Foundation model: qwen3:1.7b \u00b7 Hybrid search",
+      "seconds": 6.05
+    }
+  ]
+}

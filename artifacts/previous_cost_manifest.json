@@ -1,0 +1,29 @@
+{
+  "version": "d02de27fa145",
+  "model_file": "cost_rf_d02de27fa145.joblib",
+  "model_type": "RandomForestRegressor",
+  "data_kind": "synthetic",
+  "currency": "INR",
+  "features": [
+    "area_sqft",
+    "floors",
+    "quality",
+    "location_factor",
+    "duration_months"
+  ],
+  "metrics": {
+    "mae_inr": 1750341.3112367,
+    "rmse_inr": 2442121.7072075997,
+    "r2": 0.9817106299430379,
+    "baseline_mae_inr": 15123939.199359357
+  },
+  "run_id": "3ddeb75dc565439c8ed24670f6fcb164",
+  "release_gate": "passed: MAE beats mean baseline",
+  "feature_importances": {
+    "area_sqft": 0.8072405378530522,
+    "floors": 0.015203634942176978,
+    "quality": 0.06072579061183029,
+    "location_factor": 0.0956426751456917,
+    "duration_months": 0.021187361447248886
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-29T01:33:12.069804+00:00",
+  "unit_tests": "passed",
+  "local_process_deployment": "passed: actual uvicorn startup, health, chat page, monitoring page/API, system API",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "execution_environment": "local",
+  "hosted_ci": "not run: local execution only",
+  "docker": "not tested by this check script"
+}

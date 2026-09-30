@@ -1,0 +1,53 @@
+{
+  "at": "2026-09-29T01:24:17.531199+00:00",
+  "candidate": {
+    "version": "29fab6038d3c",
+    "model_file": "cost_rf_29fab6038d3c.joblib",
+    "model_sha256": "873de4f20f07656d217e0844d8ca32cd318eb1e4098bc80cf7e9004ddbafd978",
+    "model_type": "RandomForestRegressor",
+    "implementation": "NumPy bootstrapped CART forest",
+    "features": [
+      "area_sqft",
+      "floors",
+      "quality",
+      "location_factor",
+      "duration_months"
+    ],
+    "currency": "INR",
+    "data_kind": "synthetic",
+    "metrics": {
+      "mae_inr": 1992631.093524898,
+      "rmse_inr": 2592488.7422753708,
+      "r2": 0.9594679212555932,
+      "baseline_mae_inr": 10289730.007680014
+    },
+    "run_id": "c87608aa32c9403893c4130e6a572b0b",
+    "gate": {
+      "passed": true,
+      "reasons": []
+    },
+    "release_gate": "passed",
+    "champion_mae_same_holdout": 2327539.2969944687,
+    "dataset_file": "dataset_29fab6038d3c.csv",
+    "dataset_sha256": "0a0e9d1ada4b84706d7b222faf7062785e75015cf5f9aec1ea7820f103f3fdd1",
+    "validation": {
+      "rows": 2500,
+      "schema": "passed",
+      "data_kind": "synthetic"
+    },
+    "at": "2026-09-29T01:24:17.516087+00:00",
+    "split": {
+      "seed": 42,
+      "train_rows": 2000,
+      "test_rows": 500
+    },
+    "feature_importances": {
+      "area_sqft": 0.2859101557653525,
+      "floors": 0.044852580300990506,
+      "quality": 0.2880143328610266,
+      "location_factor": 0.3533253152249042,
+      "duration_months": 0.027897615847726365
+    }
+  },
+  "action": "promoted"
+}

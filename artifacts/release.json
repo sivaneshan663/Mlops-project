@@ -1,0 +1,40 @@
+{
+  "models": [
+    {
+      "name": "all-minilm:latest",
+      "digest": "1b226e2802dbb772b5fc32a58f103ca1804ef7501331012de126ab22f67475ef",
+      "size": 45960996
+    },
+    {
+      "name": "qwen3:1.7b",
+      "digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+      "size": 1359293444
+    }
+  ],
+  "files": {
+    "app.py": "36d2c0cfa369147ffe399aba46524ad3250ee98fad8b46768d5c7335e914f513",
+    "retrieval.py": "14432966ed780dc8c09fbcb47ab41acb236eddbf3783d60653934eed1fb8947b",
+    "forest.py": "57e8094292ed3e8d54a22b3faa641c6d5635452235e5274c5318599c954c0867",
+    "index.html": "6bac13a83ce76afaa5eb17fa6c0cab3de958a0fb40d58079c498d38ce559a397",
+    "monitoring.html": "2423a8ea2bbfd59c903cbe5c8eb8cb9704ee044163b3e897c534ba702fff1171",
+    "pipeline.py": "19ecdae9fc764b76160079ce94ff65c0a341373c0567f9fc2e27b83c93e54cd3",
+    "lifecycle.py": "5e6d332931b7a593fa34280e1693e76616a07a8ae512e8fcf7b0877d71dee1f8",
+    "evaluate_rag.py": "3a7b45d0b11974307cf1bbd5a68e8dda319678033f342615daac935dfc39d459",
+    "checks.py": "355d8d4d1cb641ae57aacba017877133653684b20b5fb6560fab781891128676",
+    "requirements.txt": "a2c03fbeed3324bdafc24566de1eef961aabc6226c1e1a7ab37ec9c0d421ef94",
+    "artifacts/cost_manifest.json": "ebee19a3cf8113ec8e669cd30c037b6febb6d36a4098f1e72eefac5ac2d15264",
+    "artifacts/sft_manifest.json": "443abd803957f6ecd5057cdca299e082161739200fd6f47e10c161c89d64bae7",
+    "artifacts/evaluation.json": "379300be310584e62f4b148c1632abc4f7f48c8cfb3c441656902e2519d8e7fd",
+    "artifacts/rag_evaluation.json": "288e9cb287b7470bbfa0c12fe1e1bd4a9c4cdfe37759aa8e27a8b047dd29784b",
+    "artifacts/pipeline_report.json": "9ecc28f089ad086b68d4f5dbe4dd8c1915781f7fb52ffe3c895d10c103739e3c",
+    "artifacts/drift_report.json": "12725762ac6c15484a4c68411e6ba0a03af632c9af159e76eb19583ef48b250f",
+    "artifacts/checks_report.json": "ba4ac2ba883c52cfd943fc70d269b3fc158b9e866f7f07399728972c29a81f2d",
+    "artifacts/cost_rf_5a25bb4c58f9.joblib": "f22b7343a44524d14af27f4fcdeb5b9fc75e01b490ddc4e7536759f5ece616ad",
+    "artifacts/dataset_5a25bb4c58f9.csv": "71f53696a3474594bf4f0117fd8a332ec64baf6f6c604055043215de3d3d6b15",
+    "artifacts/construction_adapter/adapter_model.safetensors": "ea6421148c32ba178ef01269ce03d8d12a6930638dde55cb7130b80937dfd6ae",
+    "artifacts/sft_train.jsonl": "6c69a189ba81748121006890be3dcb23aa62d76b1a0365693ec4e88a7787dec1",
+    "artifacts/sft_test.jsonl": "c29f3d95255c4fbd4c16e048d6e0e8badb0c80abf74c38235e1ce26b7a487822"
+  },
+  "scope": "local synthetic-data prototype",
+  "deployment_validation": "local tested; Docker and hosted CI prepared but not executed"
+}

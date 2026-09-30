@@ -1,0 +1,30 @@
+schema: '2.0'
+stages:
+  train_cost_model:
+    cmd: ..\..\work\prototype-env\Scripts\python.exe pipeline.py
+    deps:
+    - path: forest.py
+      hash: md5
+      md5: cc0e4306dca6a40633b7c7f92e6e1082
+      size: 2512
+    - path: lifecycle.py
+      hash: md5
+      md5: dec07f6187580d1c920ffec501900c43
+      size: 4134
+    - path: pipeline.py
+      hash: md5
+      md5: 07d00bbf820626c5955e5aa78901e84d
+      size: 5408
+    outs:
+    - path: artifacts/cost_manifest.json
+      hash: md5
+      md5: 2271a2a7309f08058735af7bffd3eaa4
+      size: 1376
+    - path: artifacts/pipeline_report.json
+      hash: md5
+      md5: ea7f9a9ab2592bebf629c60c56d07747
+      size: 1563
+    - path: artifacts/training_dataset.csv
+      hash: md5
+      md5: 4b08d81854bba7b9c6432d7bc5827def
+      size: 377567

@@ -1,0 +1,11 @@
+stages:
+  train_cost_model:
+    cmd: ..\..\work\prototype-env\Scripts\python.exe pipeline.py
+    deps:
+      - pipeline.py
+      - forest.py
+      - lifecycle.py
+    outs:
+      - artifacts/training_dataset.csv
+      - artifacts/pipeline_report.json
+      - artifacts/cost_manifest.json

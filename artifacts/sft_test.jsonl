@@ -1,0 +1,8 @@
+{"project": "Demo-25", "context": "[S1] Demo-25: The approved budget is INR 3400000.", "question": "What is the approved budget?", "answer": "The approved budget is INR 3400000. [S1]"}
+{"project": "Demo-26", "context": "[S1] Demo-26: 27 tonnes of steel are pending delivery.", "question": "What material is pending?", "answer": "27 tonnes of steel are pending delivery. [S1]"}
+{"project": "Demo-27", "context": "[S1] Demo-27: Excavation is complete. Foundation work has started.", "question": "Summarize the progress.", "answer": "Excavation is complete and foundation work has started. [S1]"}
+{"project": "Demo-28", "context": "[S1] Demo-28: The report only lists the project name.", "question": "What is the concrete supplier?", "answer": "The supplied report does not name the concrete supplier. Please provide the supplier details."}
+{"project": "Demo-29", "context": "[S1] Demo-29: The approved budget is INR 3800000.", "question": "What is the approved budget?", "answer": "The approved budget is INR 3800000. [S1]"}
+{"project": "Demo-30", "context": "[S1] Demo-30: 31 tonnes of steel are pending delivery.", "question": "What material is pending?", "answer": "31 tonnes of steel are pending delivery. [S1]"}
+{"project": "Demo-31", "context": "[S1] Demo-31: Excavation is complete. Foundation work has started.", "question": "Summarize the progress.", "answer": "Excavation is complete and foundation work has started. [S1]"}
+{"project": "Demo-32", "context": "[S1] Demo-32: The report only lists the project name.", "question": "What is the concrete supplier?", "answer": "The supplied report does not name the concrete supplier. Please provide the supplier details."}

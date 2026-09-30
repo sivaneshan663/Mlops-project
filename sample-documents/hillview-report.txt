@@ -1,0 +1,10 @@
+SYNTHETIC DEMONSTRATION DOCUMENT — not real engineering data
+Project: Hillview Offices
+Report date: 25 September 2026
+Approved budget: INR 28,000,000.
+Project scope: a fictional five-floor office building.
+Concrete supplier: SummitMix Demo Supplies.
+Latest progress: site clearance is complete; excavation is in progress.
+Pending material: 600 bags of cement, expected 28 September 2026.
+Reported issue: excavation equipment maintenance is planned for tomorrow.
+Next milestone: excavation completion on 8 October 2026.

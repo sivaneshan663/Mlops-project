@@ -1,0 +1,8 @@
+data
+__pycache__
+artifacts/mlruns
+artifacts/mlflow.db
+mlruns
+.venv
+.git
+artifacts/drift_demo

@@ -1,0 +1,53 @@
+{
+  "at": "2026-09-30T02:10:23.612153+00:00",
+  "candidate": {
+    "version": "5a25bb4c58f9",
+    "model_file": "cost_rf_5a25bb4c58f9.joblib",
+    "model_sha256": "f22b7343a44524d14af27f4fcdeb5b9fc75e01b490ddc4e7536759f5ece616ad",
+    "model_type": "RandomForestRegressor",
+    "implementation": "NumPy bootstrapped CART forest",
+    "features": [
+      "area_sqft",
+      "floors",
+      "quality",
+      "location_factor",
+      "duration_months"
+    ],
+    "currency": "INR",
+    "data_kind": "synthetic",
+    "metrics": {
+      "mae_inr": 1750341.3112367,
+      "rmse_inr": 2442121.7072075997,
+      "r2": 0.9817106299430379,
+      "baseline_mae_inr": 15123939.199359357
+    },
+    "run_id": "4c997f150c2f41c5af55c78e1953d45e",
+    "gate": {
+      "passed": true,
+      "reasons": []
+    },
+    "release_gate": "passed",
+    "champion_mae_same_holdout": null,
+    "dataset_file": "dataset_5a25bb4c58f9.csv",
+    "dataset_sha256": "71f53696a3474594bf4f0117fd8a332ec64baf6f6c604055043215de3d3d6b15",
+    "validation": {
+      "rows": 2500,
+      "schema": "passed",
+      "data_kind": "synthetic"
+    },
+    "at": "2026-09-30T02:10:23.601152+00:00",
+    "split": {
+      "seed": 42,
+      "train_rows": 2000,
+      "test_rows": 500
+    },
+    "feature_importances": {
+      "area_sqft": 0.8072405378530522,
+      "floors": 0.015203634942176978,
+      "quality": 0.06072579061183029,
+      "location_factor": 0.0956426751456917,
+      "duration_months": 0.021187361447248886
+    }
+  },
+  "action": "promoted"
+}
