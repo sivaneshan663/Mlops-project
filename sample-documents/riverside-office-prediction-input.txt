@@ -1,0 +1,45 @@
+CONSTRUCTAI PROJECT INPUT: RIVERSIDE OFFICE ANNEX
+================================================
+
+Document purpose
+----------------
+This project brief contains the approved input values for a prototype
+construction-cost prediction request. Upload this file to a ConstructAI
+project and ask the assistant to estimate the construction cost.
+
+Project information
+-------------------
+Project name: Riverside Office Annex
+Project type: Commercial office building
+Site location: Chennai, Tamil Nadu
+Scope: Reinforced-concrete office annex with lobby, meeting rooms, toilets,
+       electrical rooms, fire-safety systems, and basic interior finishes.
+
+Model input values
+------------------
+area_sqft: 18500
+floors: 5
+quality: 3
+location_factor: 1.15
+duration_months: 18
+
+Input definitions
+-----------------
+area_sqft: Total built-up floor area in square feet.
+floors: Number of above-ground floors.
+quality: Prototype quality level from 1 (economy) to 3 (premium).
+location_factor: Local cost multiplier used by the prototype model.
+duration_months: Planned construction duration in months.
+
+Prediction request
+------------------
+Using the five model input values above, estimate the construction cost in
+Indian rupees. Show the input values used, the predicted amount, and a short
+explanation of the main cost drivers. Clearly label the result as a prototype
+estimate that requires review by a qualified quantity surveyor or engineer.
+
+Document control
+----------------
+Prepared for: ConstructAI MLOps review prototype
+Revision: 1.0
+Status: Demonstration input
